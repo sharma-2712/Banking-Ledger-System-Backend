@@ -77,7 +77,7 @@ async function sendTransactionEmail(userEmail, name, amount, toAccount) {
 Your transaction was successful.
 
 Amount: ₹${amount}
-Transferred To: ${toAccount}
+Transfer To: ${toAccount}
 
 Thank you for using Banking Ledger.
 
