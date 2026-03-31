@@ -13,6 +13,11 @@ const authRouter=require("./routes/auth.route")
 const accountRouter=require('./routes/account.route')
 const transactionRoutes=require('./routes/transaction.route')
 // Use Roues
+
+app.get("/",(req,res)=>{
+    res.send("Ledger Services is up and Running")
+})
+
 app.use('/api/auth',authRouter)
 app.use('/api/accounts',accountRouter)
 app.use('/api/transactions',transactionRoutes)
