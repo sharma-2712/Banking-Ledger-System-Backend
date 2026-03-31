@@ -12,5 +12,7 @@ transactionRoute.post("/",authMiddleware.authMiddleware,transactionController.cr
 // POST /api/transactions/system/initial-funds
 //Create initial funds transaction from system Admin
 
-transactionRoute.post("/system/initial-funds")
+transactionRoute.post("/system/initial-funds",authMiddleware.authSystemUserMiddleware,transactionController.createInitialFundsTransaction)
+
+
 module.exports=transactionRoute

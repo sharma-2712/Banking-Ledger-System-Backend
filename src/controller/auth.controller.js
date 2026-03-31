@@ -31,7 +31,7 @@ async function userRegisterController(req,res){
         },
         token
     })
-    await emailService.sendRegistionEmail(user.email,user.name);
+    await emailService.sendRegistrationEmail(user.email,user.name);
 }
 
 //User Login Controller
